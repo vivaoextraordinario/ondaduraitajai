@@ -346,7 +346,7 @@
               bairro: "Cordeiros",
               dia: "Sexta",
               horario: "20h",
-              responsavel: "Thalssa",
+              responsavel: "Thaíssa",
               contato: "47988634098",
               faixaEtaria: "20 - 35 anos"
             },
@@ -361,7 +361,7 @@
             },
             {
               cidade: "Itajaí",
-              bairro: "Onda Dura",
+              bairro: "São Vicente",
               dia: "Terça",
               horario: "20h",
               responsavel: "Janaína",
@@ -423,7 +423,7 @@
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "Onda Dura",
+              bairro: "São Vicente",
               dia: "Terça",
               horario: "20h",
               responsavel: "Paulo",
@@ -441,7 +441,7 @@
             },
             {
               cidade: "Itajaí",
-              bairro: "Onda Dura",
+              bairro: "São Vicente",
               dia: "Sábado",
               horario: "15h",
               responsavel: "Tiago",
@@ -476,7 +476,7 @@
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "Onda Dura",
+              bairro: "São Vicente",
               dia: "Terça",
               horario: "20h",
               responsavel: "Vitor e Debora",
@@ -485,7 +485,7 @@
             },
             {
               cidade: "Itajaí",
-              bairro: "Onda Dura",
+              bairro: "São Vicente",
               dia: "Quinta",
               horario: "20h",
               responsavel: "Anderson e Karla",
@@ -494,7 +494,7 @@
             },
             {
               cidade: "Itajaí",
-              bairro: "Onda Dura",
+              bairro: "São Vicente",
               dia: "Quarta",
               horario: "20h",
               responsavel: "Léo e Yasmyrn",
@@ -511,7 +511,7 @@
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "Onda Dura",
+              bairro: "São Vicente",
               dia: "Sábado",
               horario: "17h",
               responsavel: "Stefany",
@@ -601,7 +601,7 @@
           const description = document.createElement('p');
           description.className = 'group-description';
           if (!grupo.bairro.includes('Onda Dura')) {
-            description.textContent = 'Grupo Pequeno ';
+            description.textContent = 'Grupo Pequeno';
           }
           if (categoria.tipo === 'Mistos' && grupo.faixaEtaria === '13 - 18 anos') {
             description.textContent += 'para adolescentes';
@@ -616,7 +616,7 @@
           
           const infoReuniao = document.createElement('div');
           infoReuniao.className = 'group-info';
-          infoReuniao.innerHTML = `<i class="far fa-clock group-info-icon"></i><span>Reunião aos ${grupo.dia}s, às ${grupo.horario}</span>`;
+          infoReuniao.innerHTML = `<i class="far fa-clock group-info-icon"></i><span>Reunião: ${grupo.dia}, às ${grupo.horario}</span>`;
           grupoCard.appendChild(infoReuniao);
           
           const infoFaixaEtaria = document.createElement('div');
