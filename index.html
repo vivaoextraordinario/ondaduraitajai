@@ -43,6 +43,7 @@
       --gray-color: #a0a09f;
       --dark-gray: #444444;
       --light-color: #f4f4f2;
+      --content-padding: 1.5rem;
     }
 
     .container {
@@ -58,7 +59,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5rem;
+      padding: var(--content-padding);
       width: 100%;
       max-width: 500px;
       margin: 0 auto;
@@ -67,10 +68,12 @@
     .logo-container {
       display: flex;
       align-items: center;
+      padding-left: 0;
+      margin-left: 0;
     }
 
     .logo {
-      width: 120px;
+      width: 80px;
       height: auto;
     }
 
@@ -97,7 +100,7 @@
 
     .content {
       flex: 1;
-      padding: 1.5rem;
+      padding: var(--content-padding);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -178,7 +181,7 @@
     }
 
     .footer {
-      padding: 1.5rem;
+      padding: var(--content-padding);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -191,6 +194,8 @@
     .social-links {
       display: flex;
       gap: 1rem;
+      padding-left: 0;
+      margin-left: 0;
     }
 
     .social-link {
@@ -213,7 +218,7 @@
     }
 
     .footer-logo {
-      width: 120px;
+      width: 80px;
       height: auto;
     }
 
@@ -315,6 +320,10 @@
       .title {
         font-size: 2.2rem;
       }
+      
+      :root {
+        --content-padding: 2rem;
+      }
     }
     .header-title,
 .header-slogan {
@@ -404,7 +413,7 @@
             {
               cidade: "Itajaí",
               bairro: "NA ONDA DURA",
-              descricao: "Grupo Pequeno para adolescentes",
+              descricao: "Grupo Pequeno para os adolescentes",
               destaque: "NEW",
               responsavel: "Stefany Lorrayne",
               dia: "Sábado",
