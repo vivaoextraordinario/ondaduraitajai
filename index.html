@@ -4,11 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onda Dura - Grupos Pequenos</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Syne:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    @font-face {
+      font-family: 'SpaceGrotesk-Bold';
+      src: url('SpaceGrotesk-Bold.woff2') format('woff2'),
+           url('SpaceGrotesk-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'SpaceGrotesk-Medium';
+      src: url('SpaceGrotesk-Medium.woff2') format('woff2'),
+           url('SpaceGrotesk-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Supply-Regular';
+      src: url('Supply-Regular.woff2') format('woff2'),
+           url('Supply-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -18,7 +38,7 @@
     body {
       background-color: #000000;
       color: #f4f4f2;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: 'SpaceGrotesk-Medium', sans-serif;
     }
 
     :root {
@@ -40,7 +60,7 @@
     .header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       padding: 1.5rem;
     }
 
@@ -50,26 +70,30 @@
     }
 
     .logo {
-      width: 60px;
+      width: 80px;
       height: auto;
     }
 
     .header-right {
       text-align: right;
-      font-family: 'Syne', monospace;
-      font-weight: 400;
       color: var(--yellow-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .header-title {
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
       font-size: 1.2rem;
       text-transform: uppercase;
-      margin-bottom: 0.5rem;
+      line-height: 1.2;
     }
 
     .header-slogan {
+      font-family: 'Supply-Regular', monospace;
       font-size: 0.9rem;
       font-style: italic;
+      line-height: 1.2;
     }
 
     .content {
@@ -94,7 +118,7 @@
     .title {
       color: var(--yellow-color);
       font-size: 1.8rem;
-      font-weight: 700;
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
       margin: 2rem 0;
       text-align: center;
       text-transform: uppercase;
@@ -121,7 +145,7 @@
       background-color: transparent;
       color: var(--light-color);
       font-size: 1rem;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: 'SpaceGrotesk-Medium', sans-serif;
       appearance: none;
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23efe160' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
       background-repeat: no-repeat;
@@ -146,7 +170,7 @@
       cursor: pointer;
       transition: background-color 0.3s;
       text-transform: uppercase;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
     }
 
     .button:hover {
@@ -157,7 +181,7 @@
       padding: 1.5rem;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
       width: 100%;
       margin-top: auto;
     }
@@ -186,7 +210,7 @@
     }
 
     .footer-logo {
-      width: 50px;
+      width: 70px;
       height: auto;
     }
 
@@ -205,6 +229,7 @@
       display: inline-block;
       margin: 1.5rem 0 1rem 0;
       text-transform: uppercase;
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
     }
 
     .group-card {
@@ -214,7 +239,7 @@
 
     .group-location {
       color: var(--yellow-color);
-      font-weight: 700;
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
       margin-bottom: 0.2rem;
       font-size: 1.1rem;
       text-transform: uppercase;
@@ -260,6 +285,7 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+      text-decoration: none;
     }
 
     .group-info-container {
@@ -285,6 +311,7 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
