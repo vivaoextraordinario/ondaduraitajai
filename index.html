@@ -6,188 +6,218 @@
   <title>Onda Dura - Grupos Pequenos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Syne:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Space Grotesk', sans-serif;
     }
 
     body {
-      background-color: #ffffff;
+      background-color: #000000;
+      color: #f4f4f2;
+      font-family: 'Space Grotesk', sans-serif;
     }
 
     :root {
-      --primary-color: #c96ce0;
-      --secondary-color: #6344bb;
       --yellow-color: #efe160;
       --gray-color: #a0a09f;
       --dark-gray: #444444;
+      --light-color: #f4f4f2;
     }
 
     .container {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      max-width: 100%;
+      margin: 0 auto;
+      position: relative;
     }
 
     .header {
-      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-      padding: 2rem 1rem;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1.5rem;
     }
 
     .logo-container {
       display: flex;
       align-items: center;
-      margin-bottom: 0.5rem;
     }
 
     .logo {
-      width: 40px;
-      height: 40px;
-      margin-right: 10px;
+      width: 60px;
+      height: auto;
     }
 
-    .header-text {
-      color: white;
-      font-weight: 700;
+    .header-right {
+      text-align: right;
+      font-family: 'Syne', monospace;
+      font-weight: 400;
+      color: var(--yellow-color);
+    }
+
+    .header-title {
       font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .header-slogan {
+      font-size: 0.9rem;
+      font-style: italic;
     }
 
     .content {
       flex: 1;
-      padding: 2rem 1rem;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .home-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
     }
 
     .title {
-      color: var(--secondary-color);
-      font-size: 1.5rem;
+      color: var(--yellow-color);
+      font-size: 1.8rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-
-    .subtitle {
-      color: var(--secondary-color);
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
+      margin: 2rem 0;
+      text-align: center;
+      text-transform: uppercase;
     }
 
     .description {
-      color: #444444;
+      color: var(--light-color);
       margin-bottom: 2rem;
-      max-width: 300px;
+      font-size: 1rem;
+      text-align: center;
     }
 
     .select-container {
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
       margin-bottom: 1rem;
     }
 
     .select {
       width: 100%;
       padding: 0.8rem;
-      border: 2px solid var(--primary-color);
+      border: 2px solid var(--yellow-color);
       border-radius: 5px;
-      background-color: white;
-      color: #444444;
+      background-color: transparent;
+      color: var(--light-color);
       font-size: 1rem;
+      font-family: 'Space Grotesk', sans-serif;
       appearance: none;
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236344bb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23efe160' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
       background-repeat: no-repeat;
       background-position: right 1rem center;
       background-size: 1em;
     }
 
+    .select option {
+      background-color: #000000;
+    }
+
     .button {
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
       padding: 0.8rem;
-      background-color: var(--primary-color);
-      color: white;
+      background-color: var(--yellow-color);
+      color: #000000;
       border: none;
       border-radius: 5px;
       font-size: 1rem;
-      font-weight: 500;
+      font-weight: 700;
       cursor: pointer;
       transition: background-color 0.3s;
+      text-transform: uppercase;
+      font-family: 'Space Grotesk', sans-serif;
     }
 
     .button:hover {
-      background-color: var(--secondary-color);
+      opacity: 0.9;
     }
 
     .footer {
-      background-color: var(--secondary-color);
-      padding: 2rem 1rem;
+      padding: 1.5rem;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: white;
-    }
-
-    .footer-logo {
-      margin-bottom: 0.5rem;
-    }
-
-    .footer-slogan {
-      font-size: 0.9rem;
-      text-align: center;
-      margin-bottom: 1.5rem;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+      margin-top: auto;
     }
 
     .social-links {
       display: flex;
       gap: 1rem;
-      margin-top: 1rem;
     }
 
     .social-link {
       color: var(--yellow-color);
       font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .footer-right {
+      text-align: right;
+      font-size: 0.8rem;
+      color: var(--light-color);
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-slogan {
+      margin-right: 0.5rem;
+    }
+
+    .footer-logo {
+      width: 50px;
+      height: auto;
+    }
+
+    /* Estilos para a página de resultados */
+    .results-content {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .category-tag {
+      background-color: var(--yellow-color);
+      color: #000000;
+      padding: 0.5rem 1rem;
+      font-weight: 700;
+      display: inline-block;
+      margin: 1.5rem 0 1rem 0;
+      text-transform: uppercase;
     }
 
     .group-card {
-      background-color: white;
-      border-radius: 5px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       width: 100%;
-      max-width: 300px;
-      text-align: left;
-    }
-
-    .group-type {
-      display: flex;
-      align-items: center;
-      color: var(--secondary-color);
-      font-weight: 700;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .group-type-icon {
-      color: var(--yellow-color);
-      margin-right: 0.5rem;
-      font-size: 1.5rem;
     }
 
     .group-location {
-      color: var(--secondary-color);
+      color: var(--yellow-color);
       font-weight: 700;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
+      font-size: 1.1rem;
+      text-transform: uppercase;
     }
 
     .group-description {
@@ -196,48 +226,45 @@
       margin-bottom: 1rem;
     }
 
+    .highlight-tag {
+      color: var(--yellow-color);
+      font-weight: 700;
+      padding: 0 0.3rem;
+    }
+
     .group-info {
       display: flex;
       align-items: center;
       margin-bottom: 0.5rem;
-      color: var(--dark-gray);
+      color: var(--light-color);
     }
 
     .group-info-icon {
-      color: var(--primary-color);
+      color: var(--light-color);
       margin-right: 0.5rem;
       width: 20px;
     }
 
     .contact-button {
-      width: 100%;
-      padding: 0.8rem;
-      background-color: #25D366;
-      color: white;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      color: var(--yellow-color);
       border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      font-weight: 500;
+      font-size: 1.8rem;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1rem;
-      text-decoration: none;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
-    .contact-button:hover {
-      background-color: #128C7E;
-    }
-
-    .new-tag {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 0.2rem 0.5rem;
-      border-radius: 3px;
-      font-size: 0.7rem;
-      margin-left: 0.5rem;
+    .group-info-container {
+      position: relative;
+      padding-right: 50px;
     }
 
     .hidden {
@@ -245,28 +272,16 @@
     }
 
     @media (min-width: 768px) {
-      .header {
-        padding: 2.5rem;
+      .container {
+        max-width: 768px;
       }
       
-      .content {
-        padding: 3rem;
+      .header, .content, .footer {
+        padding: 2rem;
       }
       
       .title {
-        font-size: 1.8rem;
-      }
-      
-      .subtitle {
-        font-size: 1.5rem;
-      }
-      
-      .description {
-        max-width: 400px;
-      }
-      
-      .select-container, .button, .group-card {
-        max-width: 400px;
+        font-size: 2.2rem;
       }
     }
   </style>
@@ -275,21 +290,26 @@
   <div class="container">
     <header class="header">
       <div class="logo-container">
-        <a href="index.html">
         <img src="logo.png" alt="Logo Onda Dura" class="logo">
-        </a>
-        <span class="header-text">VIVA O EXTRAORDINÁRIO</span>
+      </div>
+      <div class="header-right" id="header-content">
+        <div class="home-header">
+          <div class="header-title">GRUPOS</div>
+          <div class="header-title">PEQUENOS</div>
+        </div>
+        <div class="results-header hidden">
+          <div class="header-slogan">— viver igreja em qualquer</div>
+          <div class="header-slogan">lugar do mundo.</div>
+        </div>
       </div>
     </header>
     
     <main class="content">
       <!-- Página Inicial -->
-      <div id="home-page">
-        <h1 class="title">ENCONTRE</h1>
-        <h2 class="subtitle">O SEU GRUPO PEQUENO</h2>
+      <div id="home-page" class="home-content">
+        <h1 class="title">VOCÊ NÃO PRECISA<br>CAMINHAR SOZINHO!</h1>
         <p class="description">
-          Somos família! Selecione sua cidade 
-          para encontrar grupos próximos a você
+          Selecione sua cidade e visite um<br>Grupo Pequeno:
         </p>
         
         <div class="select-container">
@@ -309,27 +329,25 @@
       </div>
       
       <!-- Página de Resultados -->
-      <div id="results-page" class="hidden">
+      <div id="results-page" class="results-content hidden">
         <div id="results-container"></div>
         
-        <button id="voltar-button" class="button" style="margin-top: 1rem;">
+        <button id="voltar-button" class="button" style="margin-top: 2rem;">
           VOLTAR
         </button>
       </div>
     </main>
     
     <footer class="footer">
-      <div class="footer-logo">
-        <a href="index.html">
-        <img src="logo.png" alt="Logo Onda Dura" class="logo">
-        </a>
-      </div>
-      <p class="footer-slogan">Um lugar perfeito<br>para pessoas imperfeitas</p>
       <div class="social-links">
-        <a href="https://www.instagram.com/ondaduraitajai/" class="social-link"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/ondaduraoficial/?locale=pt_BR" class="social-link"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.youtube.com/@ondaduraoficial" class="social-link"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@ondadura" class="social-link"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/ondaduraitajai/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ondaduraoficial/?locale=pt_BR" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCV-MK5PR2dUmtiFzhR0PJEg" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@ondadura" target="_blank" class="social-link"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="footer-right">
+        <div class="footer-slogan">Um lugar perfeito<br>para pessoas imperfeitas</div>
+        <img src="logo.png" alt="Logo Onda Dura" class="footer-logo">
       </div>
     </footer>
   </div>
@@ -340,199 +358,212 @@
       cidades: ["Itajaí", "Camboriú", "Porto Belo", "Balneário Camboriú", "Bombinhas"],
       
       grupos: [
-        // MULHERES
+        // MISTOS
         {
-          tipo: "Mulheres",
-          icone: "female",
+          tipo: "MISTOS",
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "Cordeiros",
-              dia: "Sexta",
-              horario: "20h",
-              responsavel: "Thaíssa",
-              contato: "47988634098",
-              faixaEtaria: "20 - 35 anos"
-            },
-            {
-              cidade: "Itajaí",
-              bairro: "Centro (Bigodinho de Ouro)",
-              dia: "Terça",
-              horario: "20h",
-              responsavel: "Camila",
-              contato: "47997098578",
-              faixaEtaria: "20 - 30 anos"
-            },
-            {
-              cidade: "Itajaí",
-              bairro: "São Vicente",
-              dia: "Terça",
-              horario: "20h",
-              responsavel: "Janaína",
-              contato: "47996626481",
-              faixaEtaria: "30 - 60 anos"
-            },
-            {
-              cidade: "Camboriú",
-              bairro: "Tabuleiro",
-              dia: "Quarta",
-              horario: "20h30",
-              responsavel: "Carol",
-              contato: "47999592994",
-              faixaEtaria: "25 - 45 anos"
-            },
-            {
-              cidade: "Itajaí",
-              bairro: "Cidade Nova",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para os adolescentes",
+              destaque: "NEW",
+              responsavel: "Stefany Lorrayne",
               dia: "Sábado",
-              horario: "16h",
-              responsavel: "Ketlyn",
-              contato: "47991396893",
-              faixaEtaria: "18 - 30 anos"
-            },
-            {
-              cidade: "Porto Belo",
-              bairro: "Vila Nova",
-              dia: "Quinta",
-              horario: "20h",
-              responsavel: "Laís",
-              contato: "47992707532",
-              faixaEtaria: "20 - 60 anos"
+              horario: "17h",
+              contato: "41997694524",
+              faixaEtaria: "13-18 anos"
             },
             {
               cidade: "Itajaí",
-              bairro: "Ressacada",
-              dia: "Quarta",
-              horario: "20h",
-              responsavel: "Karis",
-              contato: "47991609301",
-              faixaEtaria: "18 - 30 anos",
-              destaque: "UNVT"
-            },
-            {
-              cidade: "Balneário Camboriú",
-              bairro: "Município",
-              dia: "Quarta",
-              horario: "20h",
-              responsavel: "Wanessa",
-              contato: "47996345500",
-              faixaEtaria: "20 - 35 anos"
-            }
-          ]
-        },
-        
-        // HOMENS
-        {
-          tipo: "Homens",
-          icone: "male",
-          grupos: [
-            {
-              cidade: "Itajaí",
-              bairro: "São Vicente",
-              dia: "Terça",
-              horario: "20h",
-              responsavel: "Paulo",
-              contato: "47996482779",
-              faixaEtaria: "30 anos"
-            },
-            {
-              cidade: "Camboriú",
-              bairro: "Tabuleiro",
-              dia: "Quinta",
-              horario: "20h30",
-              responsavel: "Daniel",
-              contato: "47996535417",
-              faixaEtaria: "25 - 45 anos"
-            },
-            {
-              cidade: "Itajaí",
-              bairro: "São Vicente",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para os jovens",
+              destaque: "UNVT",
+              responsavel: "Tiago Silva",
               dia: "Sábado",
               horario: "15h",
-              responsavel: "Tiago",
               contato: "47996592560",
-              faixaEtaria: "18 - 23 anos",
-              destaque: "UNVT"
+              faixaEtaria: "18-23 anos"
             },
             {
-              cidade: "Porto Belo",
-              bairro: "Vila Nova",
-              dia: "Quinta",
-              horario: "20h",
-              responsavel: "Júlio",
-              contato: "47991246603",
-              faixaEtaria: "19 - 60 anos"
-            },
-            {
-              cidade: "Itajaí",
-              bairro: "São Vicente",
-              dia: "Sexta",
-              horario: "20h",
-              responsavel: "Raphael",
-              contato: "47996666502",
-              faixaEtaria: "25 - 40 anos"
+              cidade: "Bombinhas",
+              bairro: "Morrinhos",
+              descricao: "Grupo Pequeno misto",
+              responsavel: "Andressa e Lucas",
+              dia: "Quarta",
+              horario: "19h30",
+              contato: ["47988434300", "47984078757"],
+              faixaEtaria: "20-30 anos"
             }
           ]
         },
         
         // CASAIS
         {
-          tipo: "Casais",
-          icone: "heart",
+          tipo: "CASAIS",
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "São Vicente",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para os casados",
+              responsavel: "Vitor e Debora",
               dia: "Terça",
               horario: "20h",
-              responsavel: "Vitor e Debora",
               contato: ["47992669687", "47988564913"],
-              faixaEtaria: "30 - 99 anos"
+              faixaEtaria: "30-99 anos"
             },
             {
               cidade: "Itajaí",
-              bairro: "São Vicente",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para casais",
+              responsavel: "Anderson e Karla",
               dia: "Quinta",
               horario: "20h",
-              responsavel: "Anderson e Karla",
               contato: ["11981195688", "11995210220"],
-              faixaEtaria: "30 - 99 anos"
+              faixaEtaria: "30-99 anos"
             },
             {
               cidade: "Itajaí",
-              bairro: "São Vicente",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para casais jovens",
+              responsavel: "Léo e Yasmyrn",
               dia: "Quarta",
               horario: "20h",
-              responsavel: "Léo e Yasmyrn",
               contato: ["47988138066"],
-              faixaEtaria: "20 - 35 anos"
+              faixaEtaria: "20-35 anos"
             }
           ]
         },
         
-        // MISTOS
+        // MULHERES
         {
-          tipo: "Mistos",
-          icone: "users",
+          tipo: "MULHERES",
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "São Vicente",
-              dia: "Sábado",
-              horario: "17h",
-              responsavel: "Stefany",
-              contato: "41997694524",
-              faixaEtaria: "13 - 18 anos",
-              destaque: "NEW"
+              bairro: "BAIRRO CORDEIROS",
+              descricao: "Grupo Pequeno para as mulheres",
+              responsavel: "Thalssa",
+              dia: "Sexta",
+              horario: "20h",
+              contato: "47988634098",
+              faixaEtaria: "20-35 anos"
             },
             {
-              cidade: "Bombinhas",
-              bairro: "Morrinhos",
+              cidade: "Itajaí",
+              bairro: "Centro (Bigodinho de Ouro)",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Camila",
+              dia: "Terça",
+              horario: "20h",
+              contato: "47997098578",
+              faixaEtaria: "20-30 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Janaína",
+              dia: "Terça",
+              horario: "20h",
+              contato: "47996626481",
+              faixaEtaria: "30-60 anos"
+            },
+            {
+              cidade: "Camboriú",
+              bairro: "Tabuleiro",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Carol",
               dia: "Quarta",
-              horario: "19h30",
-              responsavel: "Andressa e Lucas",
-              contato: ["47988434300", "47984078757"],
-              faixaEtaria: "20 - 30 anos"
+              horario: "20h30",
+              contato: "47999592994",
+              faixaEtaria: "25-45 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "Cidade Nova",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Ketlyn",
+              dia: "Sábado",
+              horario: "16h",
+              contato: "47991396893",
+              faixaEtaria: "18-30 anos"
+            },
+            {
+              cidade: "Porto Belo",
+              bairro: "Vila Nova",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Laís",
+              dia: "Quinta",
+              horario: "20h",
+              contato: "47992707532",
+              faixaEtaria: "20-60 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "Ressacada",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Karis",
+              dia: "Quarta",
+              horario: "20h",
+              contato: "47991609301",
+              faixaEtaria: "18-30 anos"
+            },
+            {
+              cidade: "Balneário Camboriú",
+              bairro: "Município",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Wanessa",
+              dia: "Quarta",
+              horario: "20h",
+              contato: "47996345500",
+              faixaEtaria: "20-35 anos"
+            }
+          ]
+        },
+        
+        // HOMENS
+        {
+          tipo: "HOMENS",
+          grupos: [
+            {
+              cidade: "Itajaí",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para homens",
+              responsavel: "Paulo",
+              dia: "Terça",
+              horario: "20h",
+              contato: "47996482779",
+              faixaEtaria: "30 anos"
+            },
+            {
+              cidade: "Camboriú",
+              bairro: "Tabuleiro",
+              descricao: "Grupo Pequeno para homens",
+              responsavel: "Daniel",
+              dia: "Quinta",
+              horario: "20h30",
+              contato: "47996535417",
+              faixaEtaria: "25-45 anos"
+            },
+            {
+              cidade: "Porto Belo",
+              bairro: "Vila Nova",
+              descricao: "Grupo Pequeno para homens",
+              responsavel: "Júlio",
+              dia: "Quinta",
+              horario: "20h",
+              contato: "47991246603",
+              faixaEtaria: "19-60 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "São Vicente",
+              descricao: "Grupo Pequeno para homens",
+              responsavel: "Raphael",
+              dia: "Sexta",
+              horario: "20h",
+              contato: "47996666502",
+              faixaEtaria: "25-40 anos"
             }
           ]
         }
@@ -546,6 +577,9 @@
     const buscarButton = document.getElementById('buscar-button');
     const voltarButton = document.getElementById('voltar-button');
     const resultsContainer = document.getElementById('results-container');
+    const headerContent = document.getElementById('header-content');
+    const homeHeader = document.querySelector('.home-header');
+    const resultsHeader = document.querySelector('.results-header');
 
     // Função para formatar o contato para WhatsApp
     function formatWhatsAppLink(contato) {
@@ -576,20 +610,18 @@
       
       // Se não houver grupos, mostrar mensagem
       if (gruposFiltrados.length === 0) {
-        resultsContainer.innerHTML = '<p>Nenhum grupo encontrado para esta cidade.</p>';
+        resultsContainer.innerHTML = '<p style="text-align: center; margin: 2rem 0;">Nenhum grupo encontrado para esta cidade.</p>';
         return;
       }
       
       // Criar elementos para cada categoria e grupo
       gruposFiltrados.forEach(categoria => {
         const categoriaDiv = document.createElement('div');
-        categoriaDiv.style.width = '100%';
-        categoriaDiv.style.maxWidth = '400px';
         
-        const categoriaHeader = document.createElement('div');
-        categoriaHeader.className = 'group-type';
-        categoriaHeader.innerHTML = `<i class="fas fa-${categoria.icone} group-type-icon"></i> ${categoria.tipo}`;
-        categoriaDiv.appendChild(categoriaHeader);
+        const categoriaTag = document.createElement('div');
+        categoriaTag.className = 'category-tag';
+        categoriaTag.textContent = categoria.tipo;
+        categoriaDiv.appendChild(categoriaTag);
         
         categoria.grupos.forEach(grupo => {
           const grupoCard = document.createElement('div');
@@ -598,37 +630,35 @@
           // Título e descrição
           const location = document.createElement('h3');
           location.className = 'group-location';
-          location.innerHTML = `${grupo.cidade} - ${grupo.bairro}`;
-          if (grupo.destaque) {
-            location.innerHTML += `<span class="new-tag">${grupo.destaque}</span>`;
-          }
+          location.textContent = `${grupo.cidade} - ${grupo.bairro}`;
           grupoCard.appendChild(location);
           
           const description = document.createElement('p');
           description.className = 'group-description';
-          if (!grupo.bairro.includes('Onda Dura')) {
-            description.textContent = 'Grupo Pequeno';
-          }
-          if (categoria.tipo === 'Mistos' && grupo.faixaEtaria === '13 - 18 anos') {
-            description.textContent += 'para adolescentes';
+          description.textContent = grupo.descricao;
+          if (grupo.destaque) {
+            description.innerHTML += ` <span class="highlight-tag">(${grupo.destaque})</span>`;
           }
           grupoCard.appendChild(description);
           
           // Informações do grupo
+          const infoContainer = document.createElement('div');
+          infoContainer.className = 'group-info-container';
+          
           const infoResponsavel = document.createElement('div');
           infoResponsavel.className = 'group-info';
-          infoResponsavel.innerHTML = `<i class="far fa-user group-info-icon"></i><span>Responsável: ${grupo.responsavel}</span>`;
-          grupoCard.appendChild(infoResponsavel);
+          infoResponsavel.innerHTML = `<i class="far fa-user group-info-icon"></i><span>Responsável — ${grupo.responsavel}</span>`;
+          infoContainer.appendChild(infoResponsavel);
           
           const infoReuniao = document.createElement('div');
           infoReuniao.className = 'group-info';
-          infoReuniao.innerHTML = `<i class="far fa-clock group-info-icon"></i><span>Reunião: ${grupo.dia}, às ${grupo.horario}</span>`;
-          grupoCard.appendChild(infoReuniao);
+          infoReuniao.innerHTML = `<i class="far fa-clock group-info-icon"></i><span>Encontro — ${grupo.dia}, às ${grupo.horario}</span>`;
+          infoContainer.appendChild(infoReuniao);
           
           const infoFaixaEtaria = document.createElement('div');
           infoFaixaEtaria.className = 'group-info';
           infoFaixaEtaria.innerHTML = `<i class="fas fa-users group-info-icon"></i><span>Faixa etária: ${grupo.faixaEtaria}</span>`;
-          grupoCard.appendChild(infoFaixaEtaria);
+          infoContainer.appendChild(infoFaixaEtaria);
           
           // Botão de contato
           const contactButton = document.createElement('a');
@@ -636,9 +666,10 @@
           contactButton.href = formatWhatsAppLink(grupo.contato);
           contactButton.target = '_blank';
           contactButton.rel = 'noopener noreferrer';
-          contactButton.innerHTML = '<i class="fab fa-whatsapp"></i> Entrar em contato';
-          grupoCard.appendChild(contactButton);
+          contactButton.innerHTML = '<i class="fab fa-whatsapp"></i>';
+          infoContainer.appendChild(contactButton);
           
+          grupoCard.appendChild(infoContainer);
           categoriaDiv.appendChild(grupoCard);
         });
         
@@ -653,6 +684,8 @@
         mostrarResultados(cidadeSelecionada);
         homePage.classList.add('hidden');
         resultsPage.classList.remove('hidden');
+        homeHeader.classList.add('hidden');
+        resultsHeader.classList.remove('hidden');
       } else {
         alert('Por favor, selecione uma cidade.');
       }
@@ -661,6 +694,8 @@
     voltarButton.addEventListener('click', () => {
       homePage.classList.remove('hidden');
       resultsPage.classList.add('hidden');
+      homeHeader.classList.remove('hidden');
+      resultsHeader.classList.add('hidden');
     });
   </script>
 </body>
