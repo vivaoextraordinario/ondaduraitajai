@@ -1,1 +1,751 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Onda Dura - Grupos Pequenos</title><style>@font-face{font-family:'SpaceGrotesk-Bold';src:url('SpaceGrotesk-Bold.ttf') format('truetype');font-weight:700;font-style:normal}@font-face{font-family:'SpaceGrotesk-Medium';src:url('SpaceGrotesk-Medium.ttf') format('opentype');font-weight:500;font-style:normal}@font-face{font-family:'Supply-Regular';src:url('Supply-Regular.otf') format('opentype');font-weight:400;font-style:normal}*{margin:0;padding:0;box-sizing:border-box}body{background-color:#161616;color:#f4f4f2;font-family:'SpaceGrotesk-Medium',sans-serif}:root{--yellow-color:#efe160;--gray-color:#a0a09f;--dark-gray:#444444;--light-color:#f4f4f2;--content-padding:1.5rem}.container{display:flex;flex-direction:column;min-height:100vh;max-width:500px;margin:0 auto;position:relative}.header{display:flex;justify-content:space-between;align-items:center;padding:var(--content-padding);width:100%;max-width:500px;margin:0 auto}.logo-container{display:flex;align-items:center;padding-left:0;margin-left:0}.logo{width:80px;height:auto}.header-right{text-align:right;color:var(--yellow-color);display:flex;flex-direction:column;justify-content:center}.header-title{font-family:'SpaceGrotesk-Bold',sans-serif;font-size:1.2rem;text-transform:uppercase;line-height:1.2}.header-slogan{font-family:'SpaceGrotesk-Bold',sans-serif;font-size:1.1rem;line-height:1.2}.content{flex:1;padding:var(--content-padding);display:flex;flex-direction:column;align-items:center;width:100%}.home-content{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;width:100%;max-width:500px;margin:0 auto}.title{color:var(--yellow-color);font-size:1.8rem;font-family:'SpaceGrotesk-Bold',sans-serif;margin:2rem 0;text-align:center;text-transform:uppercase}.description{color:var(--light-color);margin-bottom:2rem;font-size:1rem;text-align:center}.select-container{width:100%;max-width:400px;margin-bottom:1rem}.select{width:100%;padding:.8rem;border:2px solid var(--yellow-color);border-radius:5px;background-color:transparent;color:var(--light-color);font-size:1rem;font-family:'SpaceGrotesk-Medium',sans-serif;appearance:none;background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23efe160' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");background-repeat:no-repeat;background-position:right 1rem center;background-size:1em}.select option{background-color:#161616}.button{width:100%;max-width:400px;padding:.8rem;background-color:var(--yellow-color);color:#161616;border:none;border-radius:5px;font-size:1rem;font-weight:700;cursor:pointer;transition:background-color .3s;text-transform:uppercase;font-family:'SpaceGrotesk-Bold',sans-serif}.button:hover{opacity:.9}.footer{padding:var(--content-padding);display:flex;justify-content:space-between;align-items:center;width:100%;max-width:500px;margin:0 auto;margin-top:auto}.social-links{display:flex;gap:1rem;padding-left:0;margin-left:0}.social-link{color:var(--yellow-color);font-size:1.5rem;text-decoration:none}.footer-right{text-align:right;font-size:1rem;color:var(--light-color);display:flex;align-items:center;font-family:'SpaceGrotesk-Bold',sans-serif}.footer-slogan{margin-right:.8rem}.footer-logo{width:80px;height:auto}.results-content{width:100%;max-width:500px;margin:0 auto}.category-tag{background-color:var(--yellow-color);color:#161616;padding:.5rem 1rem;font-weight:700;display:inline-block;margin:1.5rem 0 1rem 0;text-transform:uppercase;font-family:'SpaceGrotesk-Bold',sans-serif}.group-card{margin-bottom:2rem;width:100%}.group-location{color:var(--yellow-color);font-family:'SpaceGrotesk-Bold',sans-serif;margin-bottom:.2rem;font-size:1.1rem;text-transform:uppercase}.group-description{color:var(--gray-color);font-size:.9rem;margin-bottom:1rem;text-transform:uppercase}.highlight-tag{color:var(--yellow-color);font-weight:500;padding:0 .3rem}.group-info{display:flex;align-items:center;margin-bottom:.5rem;color:var(--light-color)}.group-info-icon{color:var(--light-color);margin-right:.5rem;width:20px}.contact-button{width:40px;height:40px;background-color:transparent;color:var(--yellow-color);border:none;font-size:1.8rem;cursor:pointer;display:flex;align-items:center;justify-content:center;position:absolute;right:0;top:50%;transform:translateY(-50%);text-decoration:none}.group-info-container{position:relative;padding-right:50px}.hidden{display:none}@media (min-width:768px){.container{max-width:500px}.header,.content,.footer{padding:2rem;max-width:500px;margin:0 auto}.title{font-size:2.2rem}:root{--content-padding:2rem}}.header-title,.header-slogan{color:#F4F4F2!important}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head><body><div class="container"><header class="header"><div class="logo-container"><a href="index.html"><img src="logo.png" alt="Logo Onda Dura" class="logo"></a></div><div class="header-right" id="header-content"><div class="home-header"><div class="header-title">GRUPOS</div><div class="header-title">PEQUENOS</div></div><div class="results-header hidden"><div class="header-slogan">_viver igreja em qualquer</div><div class="header-slogan">lugar do mundo.</div></div></div></header><main class="content"><div id="home-page" class="home-content"><h1 class="title">VOCÊ NÃO PRECISA<br>CAMINHAR SOZINHO!</h1><p class="description">Selecione sua cidade e visite um<br>Grupo Pequeno:</p><div class="select-container"><select id="cidade-select" class="select"><option value="" disabled selected>Selecione sua cidade</option><option value="Itajaí">Itajaí</option><option value="Camboriú">Camboriú</option><option value="Porto Belo">Porto Belo</option><option value="Balneário Camboriú">Balneário Camboriú</option><option value="Bombinhas">Bombinhas</option></select></div><button id="buscar-button" class="button">BUSCAR GRUPOS</button></div><div id="results-page" class="results-content hidden"><div id="results-container"></div><button id="voltar-button" class="button" style="margin-top:2rem">VOLTAR</button></div></main><footer class="footer"><div class="social-links"><a href="https://www.instagram.com/ondaduraitajai/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/ondaduraoficial/?locale=pt_BR" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a><a href="https://www.youtube.com/channel/UCV-MK5PR2dUmtiFzhR0PJEg" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a><a href="https://www.tiktok.com/@ondadura" target="_blank" class="social-link"><i class="fab fa-tiktok"></i></a></div><div class="footer-right"><div class="footer-slogan">_Um lugar perfeito<br>para pessoas imperfeitas.</div></div></footer></div><script>var _0x4e5e=['Morrinhos','Tabuleiro','Ressacada','Cidade\x20Nova','Município','Centro\x20(Bigodinho\x20de\x20Ouro)','BAIRRO\x20CORDEIROS','São\x20Vicente','Vila\x20Nova','NA\x20ONDA\x20DURA','Grupo\x20Pequeno\x20para\x20adolescentes','Grupo\x20Pequeno\x20para\x20os\x20jovens','Grupo\x20Pequeno\x20misto','Grupo\x20Pequeno\x20para\x20os\x20casados','Grupo\x20Pequeno\x20para\x20casais','Grupo\x20Pequeno\x20para\x20casais\x20jovens','Grupo\x20Pequeno\x20para\x20as\x20mulheres','Grupo\x20Pequeno\x20para\x20mulheres','Grupo\x20Pequeno\x20para\x20homens','NEW','UNVT','Stefany\x20Lorrayne','Tiago\x20Silva','Andressa\x20e\x20Lucas','Vitor\x20e\x20Debora','Anderson\x20e\x20Karla','Léo\x20e\x20Yasmyrn','Thaíssa','Camila','Janaína','Carol','Ketlyn','Laís','Karis','Wanessa','Paulo','Daniel','Júlio','Raphael','Sábado','Quarta','Terça','Quinta','Sexta','17h','15h','19h30','20h','20h30','16h','41997694524','47996592560','47988434300','47984078757','47992669687','47988564913','11981195688','11995210220','47988138066','47988634098','47997098578','47996626481','47999592994','47991396893','47992707532','47991609301','47996345500','47996482779','47996535417','47991246603','47996666502','13-18\x20anos','18-23\x20anos','20-30\x20anos','30-99\x20anos','20-35\x20anos','25-45\x20anos','18-30\x20anos','30\x20anos','19-60\x20anos','25-40\x20anos','Itajaí','Camboriú','Porto\x20Belo','Balneário\x20Camboriú','Bombinhas','MISTOS','CASAIS','MULHERES','HOMENS','cidades','grupos','tipo','cidade','bairro','descricao','destaque','responsavel','dia','horario','contato','faixaEtaria','getElementById','home-page','results-page','cidade-select','buscar-button','voltar-button','results-container','header-content','querySelector','.home-header','.results-header','value','innerHTML','<p\x20style=\x22text-align:\x20center;\x20margin:\x202rem\x200;\x22>Nenhum\x20grupo\x20encontrado\x20para\x20esta\x20cidade.</p>','createElement','div','className','category-tag','textContent','appendChild','group-card','h3','group-location','p','group-description','<span\x20class=\x22highlight-tag\x22>(',')</span>','group-info-container','group-info','<i\x20class=\x22far\x20fa-user\x20group-info-icon\x22></i><span>Responsável\x20—\x20','</span>','<i\x20class=\x22far\x20fa-clock\x20group-info-icon\x22></i><span>Encontro\x20—\x20',',\x20às\x20','<i\x20class=\x22fas\x20fa-users\x20group-info-icon\x22></i><span>Faixa\x20etária:\x20','a','contact-button','href','https://wa.me/55','target','_blank','rel','noopener\x20noreferrer','<i\x20class=\x22fab\x20fa-whatsapp\x22></i>','addEventListener','click','add','remove','Por\x20favor,\x20selecione\x20uma\x20cidade.','filter','length','map','forEach'];(function(_0x3e7e0e,_0x4e5e3a){var _0x4e5e3b=function(_0x3e7e0f){while(--_0x3e7e0f){_0x3e7e0e['push'](_0x3e7e0e['shift']());}};_0x4e5e3b(++_0x4e5e3a);}(_0x4e5e,0x1c9));var _0x3e7e=function(_0x3e7e0e,_0x4e5e3a){_0x3e7e0e=_0x3e7e0e-0x0;var _0x4e5e3b=_0x4e5e[_0x3e7e0e];return _0x4e5e3b;};const gruposPequenos={'cidades':[_0x3e7e('0x4c'),_0x3e7e('0x4d'),_0x3e7e('0x4e'),_0x3e7e('0x4f'),_0x3e7e('0x50')],'grupos':[{'tipo':_0x3e7e('0x51'),'grupos':[{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x9'),'descricao':_0x3e7e('0xa'),'destaque':_0x3e7e('0x13'),'responsavel':_0x3e7e('0x15'),'dia':_0x3e7e('0x27'),'horario':_0x3e7e('0x2c'),'contato':_0x3e7e('0x32'),'faixaEtaria':_0x3e7e('0x44')},{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x9'),'descricao':_0x3e7e('0xb'),'destaque':_0x3e7e('0x14'),'responsavel':_0x3e7e('0x16'),'dia':_0x3e7e('0x27'),'horario':_0x3e7e('0x2d'),'contato':_0x3e7e('0x33'),'faixaEtaria':_0x3e7e('0x45')},{'cidade':_0x3e7e('0x50'),'bairro':_0x3e7e('0x0'),'descricao':_0x3e7e('0xc'),'responsavel':_0x3e7e('0x17'),'dia':_0x3e7e('0x28'),'horario':_0x3e7e('0x2e'),'contato':[_0x3e7e('0x34'),_0x3e7e('0x35')],'faixaEtaria':_0x3e7e('0x46')}]},{'tipo':_0x3e7e('0x52'),'grupos':[{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x9'),'descricao':_0x3e7e('0xd'),'responsavel':_0x3e7e('0x18'),'dia':_0x3e7e('0x29'),'horario':_0x3e7e('0x2f'),'contato':[_0x3e7e('0x36'),_0x3e7e('0x37')],'faixaEtaria':_0x3e7e('0x47')},{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x9'),'descricao':_0x3e7e('0xe'),'responsavel':_0x3e7e('0x19'),'dia':_0x3e7e('0x2a'),'horario':_0x3e7e('0x2f'),'contato':[_0x3e7e('0x38'),_0x3e7e('0x39')],'faixaEtaria':_0x3e7e('0x47')},{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x9'),'descricao':_0x3e7e('0xf'),'responsavel':_0x3e7e('0x1a'),'dia':_0x3e7e('0x28'),'horario':_0x3e7e('0x2f'),'contato':[_0x3e7e('0x3a')],'faixaEtaria':_0x3e7e('0x48')}]},{'tipo':_0x3e7e('0x53'),'grupos':[{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x6'),'descricao':_0x3e7e('0x10'),'responsavel':_0x3e7e('0x1b'),'dia':_0x3e7e('0x2b'),'horario':_0x3e7e('0x2f'),'contato':_0x3e7e('0x3b'),'faixaEtaria':_0x3e7e('0x48')},{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x5'),'descricao':_0x3e7e('0x11'),'responsavel':_0x3e7e('0x1c'),'dia':_0x3e7e('0x29'),'horario':_0x3e7e('0x2f'),'contato':_0x3e7e('0x3c'),'faixaEtaria':_0x3e7e('0x48')},{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x9'),'descricao':_0x3e7e('0x11'),'responsavel':_0x3e7e('0x1d'),'dia':_0x3e7e('0x29'),'horario':_0x3e7e('0x2f'),'contato':_0x3e7e('0x3d'),'faixaEtaria':'30-60\x20anos'},{'cidade':_0x3e7e('0x4d'),'bairro':_0x3e7e('0x1'),'descricao':_0x3e7e('0x11'),'responsavel':_0x3e7e('0x1e'),'dia':_0x3e7e('0x28'),'horario':_0x3e7e('0x30'),'contato':_0x3e7e('0x3e'),'faixaEtaria':_0x3e7e('0x49')},{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x3'),'descricao':_0x3e7e('0x11'),'responsavel':_0x3e7e('0x1f'),'dia':_0x3e7e('0x27'),'horario':_0x3e7e('0x31'),'contato':_0x3e7e('0x3f'),'faixaEtaria':_0x3e7e('0x4a')},{'cidade':_0x3e7e('0x4e'),'bairro':_0x3e7e('0x8'),'descricao':_0x3e7e('0x11'),'responsavel':_0x3e7e('0x20'),'dia':_0x3e7e('0x2a'),'horario':_0x3e7e('0x2f'),'contato':_0x3e7e('0x40'),'faixaEtaria':'20-60\x20anos'},{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x2'),'descricao':_0x3e7e('0x11'),'destaque':_0x3e7e('0x14'),'responsavel':_0x3e7e('0x21'),'dia':_0x3e7e('0x28'),'horario':_0x3e7e('0x2f'),'contato':_0x3e7e('0x41'),'faixaEtaria':_0x3e7e('0x4a')},{'cidade':_0x3e7e('0x4f'),'bairro':_0x3e7e('0x4'),'descricao':_0x3e7e('0x11'),'responsavel':_0x3e7e('0x22'),'dia':_0x3e7e('0x28'),'horario':_0x3e7e('0x2f'),'contato':_0x3e7e('0x42'),'faixaEtaria':_0x3e7e('0x48')}]},{'tipo':_0x3e7e('0x54'),'grupos':[{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x9'),'descricao':_0x3e7e('0x12'),'responsavel':_0x3e7e('0x23'),'dia':_0x3e7e('0x29'),'horario':_0x3e7e('0x2f'),'contato':_0x3e7e('0x43'),'faixaEtaria':_0x3e7e('0x4b')},{'cidade':_0x3e7e('0x4d'),'bairro':_0x3e7e('0x1'),'descricao':_0x3e7e('0x12'),'responsavel':_0x3e7e('0x24'),'dia':_0x3e7e('0x2a'),'horario':_0x3e7e('0x30'),'contato':_0x3e7e('0x43'),'faixaEtaria':_0x3e7e('0x49')},{'cidade':_0x3e7e('0x4e'),'bairro':_0x3e7e('0x8'),'descricao':_0x3e7e('0x12'),'responsavel':_0x3e7e('0x25'),'dia':_0x3e7e('0x2a'),'horario':_0x3e7e('0x2f'),'contato':_0x3e7e('0x43'),'faixaEtaria':_0x3e7e('0x4b')},{'cidade':_0x3e7e('0x4c'),'bairro':_0x3e7e('0x7'),'descricao':_0x3e7e('0x12'),'responsavel':_0x3e7e('0x26'),'dia':_0x3e7e('0x2b'),'horario':_0x3e7e('0x2f'),'contato':_0x3e7e('0x43'),'faixaEtaria':_0x3e7e('0x4b')}]}]};const homePage=document[_0x3e7e('0x55')](_0x3e7e('0x56'));const resultsPage=document[_0x3e7e('0x55')](_0x3e7e('0x57'));const cidadeSelect=document[_0x3e7e('0x55')](_0x3e7e('0x58'));const buscarButton=document[_0x3e7e('0x55')](_0x3e7e('0x59'));const voltarButton=document[_0x3e7e('0x55')](_0x3e7e('0x5a'));const resultsContainer=document[_0x3e7e('0x55')](_0x3e7e('0x5b'));const headerContent=document[_0x3e7e('0x55')](_0x3e7e('0x5c'));const homeHeader=document[_0x3e7e('0x5d')](_0x3e7e('0x5e'));const resultsHeader=document[_0x3e7e('0x5d')](_0x3e7e('0x5f'));function formatWhatsAppLink(_0x3e7e0e){if(Array['isArray'](_0x3e7e0e)){return _0x3e7e('0x7c')+_0x3e7e0e[0x0];}return _0x3e7e('0x7c')+_0x3e7e0e;}function mostrarResultados(_0x3e7e0e){resultsContainer[_0x3e7e('0x61')]='';const _0x4e5e3a=gruposPequenos[_0x3e7e('0x55')][_0x3e7e('0x86')](function(_0x3e7e0f){return{'tipo':_0x3e7e0f[_0x3e7e('0x55')],'grupos':_0x3e7e0f[_0x3e7e('0x55')][_0x3e7e('0x85')](function(_0x4e5e3b){return _0x4e5e3b[_0x3e7e('0x57')]===_0x3e7e0e;})};})['filter'](function(_0x3e7e0f){return _0x3e7e0f[_0x3e7e('0x55')][_0x3e7e('0x86')]>0x0;});if(_0x4e5e3a[_0x3e7e('0x86')]==0x0){resultsContainer[_0x3e7e('0x61')]=_0x3e7e('0x62');return;}_0x4e5e3a[_0x3e7e('0x87')](function(_0x3e7e0f){const _0x4e5e3b=document[_0x3e7e('0x63')](_0x3e7e('0x64'));const _0x4e5e3c=document[_0x3e7e('0x63')](_0x3e7e('0x64'));_0x4e5e3c[_0x3e7e('0x65')]=_0x3e7e('0x66');_0x4e5e3c[_0x3e7e('0x67')]=_0x3e7e0f[_0x3e7e('0x55')];_0x4e5e3b[_0x3e7e('0x68')](_0x4e5e3c);_0x3e7e0f[_0x3e7e('0x55')][_0x3e7e('0x87')](function(_0x4e5e3d){const _0x4e5e3e=document[_0x3e7e('0x63')](_0x3e7e('0x64'));_0x4e5e3e[_0x3e7e('0x65')]=_0x3e7e('0x69');const _0x4e5e3f=document[_0x3e7e('0x63')](_0x3e7e('0x6a'));_0x4e5e3f[_0x3e7e('0x65')]=_0x3e7e('0x6b');_0x4e5e3f[_0x3e7e('0x67')]=_0x4e5e3d[_0x3e7e('0x57')]+'\x20-\x20'+_0x4e5e3d[_0x3e7e('0x58')];_0x4e5e3e[_0x3e7e('0x68')](_0x4e5e3f);const _0x4e5e40=document[_0x3e7e('0x63')](_0x3e7e('0x6c'));_0x4e5e40[_0x3e7e('0x65')]=_0x3e7e('0x6d');_0x4e5e40[_0x3e7e('0x67')]=_0x4e5e3d[_0x3e7e('0x59')];if(_0x4e5e3d[_0x3e7e('0x5a')]){_0x4e5e40[_0x3e7e('0x61')]+=_0x3e7e('0x6e')+_0x4e5e3d[_0x3e7e('0x5a')]+_0x3e7e('0x6f');}_0x4e5e3e[_0x3e7e('0x68')](_0x4e5e40);const _0x4e5e41=document[_0x3e7e('0x63')](_0x3e7e('0x64'));_0x4e5e41[_0x3e7e('0x65')]=_0x3e7e('0x70');const _0x4e5e42=document[_0x3e7e('0x63')](_0x3e7e('0x64'));_0x4e5e42[_0x3e7e('0x65')]=_0x3e7e('0x71');_0x4e5e42[_0x3e7e('0x61')]=_0x3e7e('0x72')+_0x4e5e3d[_0x3e7e('0x5b')]+_0x3e7e('0x73');_0x4e5e41[_0x3e7e('0x68')](_0x4e5e42);const _0x4e5e43=document[_0x3e7e('0x63')](_0x3e7e('0x64'));_0x4e5e43[_0x3e7e('0x65')]=_0x3e7e('0x71');_0x4e5e43[_0x3e7e('0x61')]=_0x3e7e('0x74')+_0x4e5e3d[_0x3e7e('0x5c')]+_0x3e7e('0x75')+_0x4e5e3d[_0x3e7e('0x5d')]+_0x3e7e('0x73');_0x4e5e41[_0x3e7e('0x68')](_0x4e5e43);const _0x4e5e44=document[_0x3e7e('0x63')](_0x3e7e('0x64'));_0x4e5e44[_0x3e7e('0x65')]=_0x3e7e('0x71');_0x4e5e44[_0x3e7e('0x61')]=_0x3e7e('0x76')+_0x4e5e3d[_0x3e7e('0x5f')]+_0x3e7e('0x73');_0x4e5e41[_0x3e7e('0x68')](_0x4e5e44);const _0x4e5e45=document[_0x3e7e('0x63')](_0x3e7e('0x77'));_0x4e5e45[_0x3e7e('0x65')]=_0x3e7e('0x78');_0x4e5e45[_0x3e7e('0x79')]=formatWhatsAppLink(_0x4e5e3d[_0x3e7e('0x5e')]);_0x4e5e45[_0x3e7e('0x7a')]=_0x3e7e('0x7b');_0x4e5e45[_0x3e7e('0x7d')]=_0x3e7e('0x7e');_0x4e5e45[_0x3e7e('0x61')]=_0x3e7e('0x7f');_0x4e5e41[_0x3e7e('0x68')](_0x4e5e45);_0x4e5e3e[_0x3e7e('0x68')](_0x4e5e41);_0x4e5e3b[_0x3e7e('0x68')](_0x4e5e3e);});resultsContainer[_0x3e7e('0x68')](_0x4e5e3b);});}buscarButton[_0x3e7e('0x80')](_0x3e7e('0x81'),function(){const _0x3e7e0e=cidadeSelect[_0x3e7e('0x60')];if(_0x3e7e0e){mostrarResultados(_0x3e7e0e);homePage['classList'][_0x3e7e('0x82')](_0x3e7e('0x84'));resultsPage['classList'][_0x3e7e('0x83')](_0x3e7e('0x84'));homeHeader['classList'][_0x3e7e('0x82')](_0x3e7e('0x84'));resultsHeader['classList'][_0x3e7e('0x83')](_0x3e7e('0x84'));}else{alert(_0x3e7e('0x85'));}});voltarButton[_0x3e7e('0x80')](_0x3e7e('0x81'),function(){homePage['classList'][_0x3e7e('0x83')](_0x3e7e('0x84'));resultsPage['classList'][_0x3e7e('0x82')](_0x3e7e('0x84'));homeHeader['classList'][_0x3e7e('0x83')](_0x3e7e('0x84'));resultsHeader['classList'][_0x3e7e('0x82')](_0x3e7e('0x84'));});</script><script>document.addEventListener('contextmenu',function(e){e.preventDefault();});document.onkeydown=function(e){if(e.keyCode==123||e.keyCode==85&&e.ctrlKey==true){e.preventDefault();return false;}};window.addEventListener('selectstart',function(e){e.preventDefault();});</script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onda Dura - Grupos Pequenos</title>
+  <style>
+    @font-face {
+      font-family: 'SpaceGrotesk-Bold';
+      src: url('SpaceGrotesk-Bold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'SpaceGrotesk-Medium';
+      src: url('SpaceGrotesk-Medium.ttf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Supply-Regular';
+      src: url('Supply-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #161616;
+      color: #f4f4f2;
+      font-family: 'SpaceGrotesk-Medium', sans-serif;
+    }
+
+    :root {
+      --yellow-color: #efe160;
+      --gray-color: #a0a09f;
+      --dark-gray: #444444;
+      --light-color: #f4f4f2;
+      --content-padding: 1.5rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      max-width: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--content-padding);
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+    }
+
+    .header-right {
+      text-align: right;
+      color: var(--yellow-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .header-title {
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .header-slogan {
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    .content {
+      flex: 1;
+      padding: var(--content-padding);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .home-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .title {
+      color: var(--yellow-color);
+      font-size: 1.8rem;
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
+      margin: 2rem 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .description {
+      color: var(--light-color);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .select-container {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 1rem;
+    }
+
+    .select {
+      width: 100%;
+      padding: 0.8rem;
+      border: 2px solid var(--yellow-color);
+      border-radius: 5px;
+      background-color: transparent;
+      color: var(--light-color);
+      font-size: 1rem;
+      font-family: 'SpaceGrotesk-Medium', sans-serif;
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23efe160' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 1em;
+    }
+
+    .select option {
+      background-color: #161616;
+    }
+
+    .button {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.8rem;
+      background-color: var(--yellow-color);
+      color: #161616;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-transform: uppercase;
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    .footer {
+      padding: var(--content-padding);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-top: auto;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    .social-link {
+      color: var(--yellow-color);
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .footer-right {
+      text-align: right;
+      font-size: 1rem;
+      color: var(--light-color);
+      display: flex;
+      align-items: center;
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
+    }
+
+    .footer-slogan {
+      margin-right: 0.8rem;
+    }
+
+    .footer-logo {
+      width: 80px;
+      height: auto;
+    }
+
+    /* Estilos para a página de resultados */
+    .results-content {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .category-tag {
+      background-color: var(--yellow-color);
+      color: #161616;
+      padding: 0.5rem 1rem;
+      font-weight: 700;
+      display: inline-block;
+      margin: 1.5rem 0 1rem 0;
+      text-transform: uppercase;
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
+    }
+
+    .group-card {
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    .group-location {
+      color: var(--yellow-color);
+      font-family: 'SpaceGrotesk-Bold', sans-serif;
+      margin-bottom: 0.2rem;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+
+    .group-description {
+      color: var(--gray-color);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .highlight-tag {
+      color: var(--yellow-color);
+      font-weight: 500;
+      padding: 0 0.3rem;
+    }
+
+    .group-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      color: var(--light-color);
+    }
+
+    .group-info-icon {
+      color: var(--light-color);
+      margin-right: 0.5rem;
+      width: 20px;
+    }
+
+    .contact-button {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      color: var(--yellow-color);
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-decoration: none;
+    }
+
+    .group-info-container {
+      position: relative;
+      padding-right: 50px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        max-width: 500px;
+      }
+      
+      .header, .content, .footer {
+        padding: 2rem;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      .title {
+        font-size: 2.2rem;
+      }
+      
+      :root {
+        --content-padding: 2rem;
+      }
+    }
+    .header-title,
+.header-slogan {
+  color: #F4F4F2 !important;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-container">
+          <a href="index.html">
+        <img src="logo.png" alt="Logo Onda Dura" class="logo">
+        </a>
+      </div>
+      <div class="header-right" id="header-content">
+        <div class="home-header">
+          <div class="header-title">GRUPOS</div>
+          <div class="header-title">PEQUENOS</div>
+        </div>
+        <div class="results-header hidden">
+          <div class="header-slogan">_viver igreja em qualquer</div>
+          <div class="header-slogan">lugar do mundo.</div>
+        </div>
+      </div>
+    </header>
+    
+    <main class="content">
+      <!-- Página Inicial -->
+      <div id="home-page" class="home-content">
+        <h1 class="title">VOCÊ NÃO PRECISA<br>CAMINHAR SOZINHO!</h1>
+        <p class="description">
+          Selecione sua cidade e visite um<br>Grupo Pequeno:
+        </p>
+        
+        <div class="select-container">
+          <select id="cidade-select" class="select">
+            <option value="" disabled selected>Selecione sua cidade</option>
+            <option value="Itajaí">Itajaí</option>
+            <option value="Camboriú">Camboriú</option>
+            <option value="Porto Belo">Porto Belo</option>
+            <option value="Balneário Camboriú">Balneário Camboriú</option>
+            <option value="Bombinhas">Bombinhas</option>
+          </select>
+        </div>
+        
+        <button id="buscar-button" class="button">
+          BUSCAR GRUPOS
+        </button>
+      </div>
+      
+      <!-- Página de Resultados -->
+      <div id="results-page" class="results-content hidden">
+        <div id="results-container"></div>
+        
+        <button id="voltar-button" class="button" style="margin-top: 2rem;">
+          VOLTAR
+        </button>
+      </div>
+    </main>
+    
+    <footer class="footer">
+      <div class="social-links">
+        <a href="https://www.instagram.com/ondaduraitajai/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ondaduraoficial/?locale=pt_BR" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCV-MK5PR2dUmtiFzhR0PJEg" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@ondadura" target="_blank" class="social-link"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="footer-right">
+        <div class="footer-slogan">_Um lugar perfeito<br>para pessoas imperfeitas.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Dados dos Grupos Pequenos
+    const gruposPequenos = {
+      cidades: ["Itajaí", "Camboriú", "Porto Belo", "Balneário Camboriú", "Bombinhas"],
+      
+      grupos: [
+        // MISTOS
+        {
+          tipo: "MISTOS",
+          grupos: [
+            {
+              cidade: "Itajaí",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para adolescentes",
+              destaque: "NEW",
+              responsavel: "Stefany Lorrayne",
+              dia: "Sábado",
+              horario: "17h",
+              contato: "41997694524",
+              faixaEtaria: "13-18 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para os jovens",
+              destaque: "UNVT",
+              responsavel: "Tiago Silva",
+              dia: "Sábado",
+              horario: "15h",
+              contato: "47996592560",
+              faixaEtaria: "18-23 anos"
+            },
+            {
+              cidade: "Bombinhas",
+              bairro: "Morrinhos",
+              descricao: "Grupo Pequeno misto",
+              responsavel: "Andressa e Lucas",
+              dia: "Quarta",
+              horario: "19h30",
+              contato: ["47988434300", "47984078757"],
+              faixaEtaria: "20-30 anos"
+            }
+          ]
+        },
+        
+        // CASAIS
+        {
+          tipo: "CASAIS",
+          grupos: [
+            {
+              cidade: "Itajaí",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para os casados",
+              responsavel: "Vitor e Debora",
+              dia: "Terça",
+              horario: "20h",
+              contato: ["47992669687", "47988564913"],
+              faixaEtaria: "30-99 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para casais",
+              responsavel: "Anderson e Karla",
+              dia: "Quinta",
+              horario: "20h",
+              contato: ["11981195688", "11995210220"],
+              faixaEtaria: "30-99 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para casais jovens",
+              responsavel: "Léo e Yasmyrn",
+              dia: "Quarta",
+              horario: "20h",
+              contato: ["47988138066"],
+              faixaEtaria: "20-35 anos"
+            }
+          ]
+        },
+        
+        // MULHERES
+        {
+          tipo: "MULHERES",
+          grupos: [
+            {
+              cidade: "Itajaí",
+              bairro: "BAIRRO CORDEIROS",
+              descricao: "Grupo Pequeno para as mulheres",
+              responsavel: "Thaíssa",
+              dia: "Sexta",
+              horario: "20h",
+              contato: "47988634098",
+              faixaEtaria: "20-35 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "Centro (Bigodinho de Ouro)",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Camila",
+              dia: "Terça",
+              horario: "20h",
+              contato: "47997098578",
+              faixaEtaria: "20-30 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Janaína",
+              dia: "Terça",
+              horario: "20h",
+              contato: "47996626481",
+              faixaEtaria: "30-60 anos"
+            },
+            {
+              cidade: "Camboriú",
+              bairro: "Tabuleiro",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Carol",
+              dia: "Quarta",
+              horario: "20h30",
+              contato: "47999592994",
+              faixaEtaria: "25-45 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "Cidade Nova",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Ketlyn",
+              dia: "Sábado",
+              horario: "16h",
+              contato: "47991396893",
+              faixaEtaria: "18-30 anos"
+            },
+            {
+              cidade: "Porto Belo",
+              bairro: "Vila Nova",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Laís",
+              dia: "Quinta",
+              horario: "20h",
+              contato: "47992707532",
+              faixaEtaria: "20-60 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "Ressacada",
+              descricao: "Grupo Pequeno para mulheres",
+              destaque: "UNVT",
+              responsavel: "Karis",
+              dia: "Quarta",
+              horario: "20h",
+              contato: "47991609301",
+              faixaEtaria: "18-30 anos"
+            },
+            {
+              cidade: "Balneário Camboriú",
+              bairro: "Município",
+              descricao: "Grupo Pequeno para mulheres",
+              responsavel: "Wanessa",
+              dia: "Quarta",
+              horario: "20h",
+              contato: "47996345500",
+              faixaEtaria: "20-35 anos"
+            }
+          ]
+        },
+        
+        // HOMENS
+        {
+          tipo: "HOMENS",
+          grupos: [
+            {
+              cidade: "Itajaí",
+              bairro: "NA ONDA DURA",
+              descricao: "Grupo Pequeno para homens",
+              responsavel: "Paulo",
+              dia: "Terça",
+              horario: "20h",
+              contato: "47996482779",
+              faixaEtaria: "30 anos"
+            },
+            {
+              cidade: "Camboriú",
+              bairro: "Tabuleiro",
+              descricao: "Grupo Pequeno para homens",
+              responsavel: "Daniel",
+              dia: "Quinta",
+              horario: "20h30",
+              contato: "47996535417",
+              faixaEtaria: "25-45 anos"
+            },
+            {
+              cidade: "Porto Belo",
+              bairro: "Vila Nova",
+              descricao: "Grupo Pequeno para homens",
+              responsavel: "Júlio",
+              dia: "Quinta",
+              horario: "20h",
+              contato: "47991246603",
+              faixaEtaria: "19-60 anos"
+            },
+            {
+              cidade: "Itajaí",
+              bairro: "São Vicente",
+              descricao: "Grupo Pequeno para homens",
+              responsavel: "Raphael",
+              dia: "Sexta",
+              horario: "20h",
+              contato: "47996666502",
+              faixaEtaria: "25-40 anos"
+            }
+          ]
+        }
+      ]
+    };
+
+    // Elementos DOM
+    const homePage = document.getElementById('home-page');
+    const resultsPage = document.getElementById('results-page');
+    const cidadeSelect = document.getElementById('cidade-select');
+    const buscarButton = document.getElementById('buscar-button');
+    const voltarButton = document.getElementById('voltar-button');
+    const resultsContainer = document.getElementById('results-container');
+    const headerContent = document.getElementById('header-content');
+    const homeHeader = document.querySelector('.home-header');
+    const resultsHeader = document.querySelector('.results-header');
+
+    // Função para formatar o contato para WhatsApp
+    function formatWhatsAppLink(contato) {
+      if (Array.isArray(contato)) {
+        return `https://wa.me/55${contato[0]}`;
+      }
+      return `https://wa.me/55${contato}`;
+    }
+
+    // Função para mostrar os resultados filtrados por cidade
+    function mostrarResultados(cidade) {
+      // Limpar resultados anteriores
+      resultsContainer.innerHTML = '';
+      
+      // Filtrar grupos pela cidade selecionada
+      const gruposFiltrados = gruposPequenos.grupos
+        .map(categoria => {
+          const gruposDaCategoria = categoria.grupos.filter(
+            grupo => grupo.cidade === cidade
+          );
+          
+          return {
+            ...categoria,
+            grupos: gruposDaCategoria
+          };
+        })
+        .filter(categoria => categoria.grupos.length > 0);
+      
+      // Se não houver grupos, mostrar mensagem
+      if (gruposFiltrados.length === 0) {
+        resultsContainer.innerHTML = '<p style="text-align: center; margin: 2rem 0;">Nenhum grupo encontrado para esta cidade.</p>';
+        return;
+      }
+      
+      // Criar elementos para cada categoria e grupo
+      gruposFiltrados.forEach(categoria => {
+        const categoriaDiv = document.createElement('div');
+        
+        const categoriaTag = document.createElement('div');
+        categoriaTag.className = 'category-tag';
+        categoriaTag.textContent = categoria.tipo;
+        categoriaDiv.appendChild(categoriaTag);
+        
+        categoria.grupos.forEach(grupo => {
+          const grupoCard = document.createElement('div');
+          grupoCard.className = 'group-card';
+          
+          // Título e descrição
+          const location = document.createElement('h3');
+          location.className = 'group-location';
+          location.textContent = `${grupo.cidade} - ${grupo.bairro}`;
+          grupoCard.appendChild(location);
+          
+          const description = document.createElement('p');
+          description.className = 'group-description';
+          description.textContent = grupo.descricao;
+          if (grupo.destaque) {
+            description.innerHTML += ` <span class="highlight-tag">(${grupo.destaque})</span>`;
+          }
+          grupoCard.appendChild(description);
+          
+          // Informações do grupo
+          const infoContainer = document.createElement('div');
+          infoContainer.className = 'group-info-container';
+          
+          const infoResponsavel = document.createElement('div');
+          infoResponsavel.className = 'group-info';
+          infoResponsavel.innerHTML = `<i class="far fa-user group-info-icon"></i><span>Responsável — ${grupo.responsavel}</span>`;
+          infoContainer.appendChild(infoResponsavel);
+          
+          const infoReuniao = document.createElement('div');
+          infoReuniao.className = 'group-info';
+          infoReuniao.innerHTML = `<i class="far fa-clock group-info-icon"></i><span>Encontro — ${grupo.dia}, às ${grupo.horario}</span>`;
+          infoContainer.appendChild(infoReuniao);
+          
+          const infoFaixaEtaria = document.createElement('div');
+          infoFaixaEtaria.className = 'group-info';
+          infoFaixaEtaria.innerHTML = `<i class="fas fa-users group-info-icon"></i><span>Faixa etária: ${grupo.faixaEtaria}</span>`;
+          infoContainer.appendChild(infoFaixaEtaria);
+          
+          // Botão de contato
+          const contactButton = document.createElement('a');
+          contactButton.className = 'contact-button';
+          contactButton.href = formatWhatsAppLink(grupo.contato);
+          contactButton.target = '_blank';
+          contactButton.rel = 'noopener noreferrer';
+          contactButton.innerHTML = '<i class="fab fa-whatsapp"></i>';
+          infoContainer.appendChild(contactButton);
+          
+          grupoCard.appendChild(infoContainer);
+          categoriaDiv.appendChild(grupoCard);
+        });
+        
+        resultsContainer.appendChild(categoriaDiv);
+      });
+    }
+
+    // Event Listeners
+    buscarButton.addEventListener('click', () => {
+      const cidadeSelecionada = cidadeSelect.value;
+      if (cidadeSelecionada) {
+        mostrarResultados(cidadeSelecionada);
+        homePage.classList.add('hidden');
+        resultsPage.classList.remove('hidden');
+        homeHeader.classList.add('hidden');
+        resultsHeader.classList.remove('hidden');
+      } else {
+        alert('Por favor, selecione uma cidade.');
+      }
+    });
+
+    voltarButton.addEventListener('click', () => {
+      homePage.classList.remove('hidden');
+      resultsPage.classList.add('hidden');
+      homeHeader.classList.remove('hidden');
+      resultsHeader.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
