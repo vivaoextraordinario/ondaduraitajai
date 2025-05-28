@@ -368,6 +368,8 @@
             <option value="Camboriú">Camboriú</option>
             <option value="Porto Belo">Porto Belo</option>
             <option value="Balneário Camboriú">Balneário Camboriú</option>
+            <option value="Tijucas">Tijucas</option>
+            <option value="Tijucas">Itapema</option>
             <option value="Bombinhas">Bombinhas</option>
           </select>
         </div>
@@ -403,7 +405,7 @@
   <script>
     // Dados dos Grupos Pequenos
     const gruposPequenos = {
-      cidades: ["Itajaí", "Camboriú", "Porto Belo", "Balneário Camboriú", "Bombinhas"],
+      cidades: ["Itajaí", "Camboriú", "Porto Belo", "Balneário Camboriú", "Itapema", "Tijucas", "Bombinhas"],
       
       grupos: [
         // MISTOS
@@ -412,32 +414,41 @@
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "NA ONDA DURA",
+              bairro: "São Vicente",
               descricao: "Grupo Pequeno para adolescentes",
               destaque: "NEW",
-              responsavel: "Stefany Lorrayne",
-              dia: "Sábado",
-              horario: "17h",
-              contato: "41997694524",
-              faixaEtaria: "13-18 anos"
-            },
-            {
-              cidade: "Itajaí",
-              bairro: "NA ONDA DURA",
-              descricao: "Grupo Pequeno para os jovens",
-              destaque: "UNVT",
-              responsavel: "Tiago Silva",
+              responsavel: "Stefany",
               dia: "Sábado",
               horario: "15h",
-              contato: "47996592560",
-              faixaEtaria: "18-23 anos"
+              contato: "41997694524",
+              faixaEtaria: "13-17 anos"
+            },
+                        {
+              cidade: "Itapema",
+              bairro: "Morretes",
+              descricao: "Grupo Pequeno para homens e mulheres",
+              responsavel: "Jean",
+              dia: "Sexta",
+              horario: "20h",
+              contato: "47996597104",
+              faixaEtaria: "18-50 anos"
+            },
+            {
+              cidade: "Tijucas",
+              bairro: "XV de Novembro",
+              descricao: "Grupo Pequeno para homens e mulheres",
+              responsavel: "Elvis",
+              dia: "Quinta",
+              horario: "20h",
+              contato: "48999292460",
+              faixaEtaria: "18-40 anos"
             },
             {
               cidade: "Bombinhas",
               bairro: "Morrinhos",
               descricao: "Grupo Pequeno misto",
               responsavel: "Andressa e Lucas",
-              dia: "Quarta",
+              dia: "Sexta",
               horario: "19h30",
               contato: ["47988434300", "47984078757"],
               faixaEtaria: "20-30 anos"
@@ -451,33 +462,23 @@
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "NA ONDA DURA",
-              descricao: "Grupo Pequeno para os casados",
-              responsavel: "Vitor e Debora",
-              dia: "Terça",
-              horario: "20h",
-              contato: ["47992669687", "47988564913"],
-              faixaEtaria: "30-99 anos"
-            },
-            {
-              cidade: "Itajaí",
-              bairro: "NA ONDA DURA",
+              bairro: "São Vicente",
               descricao: "Grupo Pequeno para casais",
-              responsavel: "Anderson e Karla",
+              responsavel: "Gabriel e Fabiane",
               dia: "Quinta",
               horario: "20h",
-              contato: ["11981195688", "11995210220"],
-              faixaEtaria: "30-99 anos"
+              contato: ["21979681927", "47996511970"],
+              faixaEtaria: "20-35 anos"
             },
             {
               cidade: "Itajaí",
-              bairro: "NA ONDA DURA",
-              descricao: "Grupo Pequeno para casais jovens",
-              responsavel: "Léo e Yasmyrn",
-              dia: "Quarta",
+              bairro: "São Vicente",
+              descricao: "Grupo Pequeno para casais",
+              responsavel: "Junior e Thais",
+              dia: "Quinta",
               horario: "20h",
-              contato: ["47988138066"],
-              faixaEtaria: "20-35 anos"
+              contato: ["47992714176", "47996884630"],
+              faixaEtaria: "30-99 anos"
             }
           ]
         },
@@ -488,7 +489,7 @@
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "BAIRRO CORDEIROS",
+              bairro: "Cordeiros",
               descricao: "Grupo Pequeno para as mulheres",
               responsavel: "Thaíssa",
               dia: "Sexta",
@@ -498,7 +499,7 @@
             },
             {
               cidade: "Itajaí",
-              bairro: "Centro (Bigodinho de Ouro)",
+              bairro: "Centro",
               descricao: "Grupo Pequeno para mulheres",
               responsavel: "Camila",
               dia: "Terça",
@@ -508,23 +509,13 @@
             },
             {
               cidade: "Itajaí",
-              bairro: "NA ONDA DURA",
+              bairro: "São Vicente",
               descricao: "Grupo Pequeno para mulheres",
               responsavel: "Janaína",
               dia: "Terça",
               horario: "20h",
               contato: "47996626481",
               faixaEtaria: "30-60 anos"
-            },
-            {
-              cidade: "Camboriú",
-              bairro: "Tabuleiro",
-              descricao: "Grupo Pequeno para mulheres",
-              responsavel: "Carol",
-              dia: "Quarta",
-              horario: "20h30",
-              contato: "47999592994",
-              faixaEtaria: "25-45 anos"
             },
             {
               cidade: "Itajaí",
@@ -559,13 +550,13 @@
             },
             {
               cidade: "Balneário Camboriú",
-              bairro: "Município",
+              bairro: "Centro",
               descricao: "Grupo Pequeno para mulheres",
-              responsavel: "Wanessa",
+              responsavel: "Marcia",
               dia: "Quarta",
               horario: "20h",
-              contato: "47996345500",
-              faixaEtaria: "20-35 anos"
+              contato: "4799494070",
+              faixaEtaria: "25-45 anos"
             }
           ]
         },
@@ -576,23 +567,44 @@
           grupos: [
             {
               cidade: "Itajaí",
-              bairro: "NA ONDA DURA",
+              bairro: "Centro",
               descricao: "Grupo Pequeno para homens",
               responsavel: "Paulo",
               dia: "Terça",
               horario: "20h",
               contato: "47996482779",
-              faixaEtaria: "30 anos"
+              faixaEtaria: "25-35"
+            },
+                        {
+              cidade: "Itajaí",
+              bairro: "São Vicente",
+              descricao: "Grupo Pequeno para os jovens",
+              destaque: "UNVT",
+              responsavel: "Tiago Silva",
+              dia: "Sábado",
+              horario: "15h",
+              contato: "47996592560",
+              faixaEtaria: "18-23 anos"
             },
             {
+              cidade: "Balneário Camboriú",
+              bairro: "Nações",
+              descricao: "Grupo Pequeno para homens",
+              responsavel: "Tiago",
+              dia: "Terça",
+              horario: "20h",
+              contato: "47996751742",
+              faixaEtaria: "19-25 anos"
+            },
+                        {
               cidade: "Camboriú",
               bairro: "Tabuleiro",
               descricao: "Grupo Pequeno para homens",
-              responsavel: "Daniel",
+              responsavel: "Gabriel",
               dia: "Quinta",
-              horario: "20h30",
-              contato: "47996535417",
-              faixaEtaria: "25-45 anos"
+              horario: "20h",
+              contato: "47999457863",
+              faixaEtaria: "20-35 anos"
             },
             {
               cidade: "Porto Belo",
@@ -706,7 +718,7 @@
           
           const infoFaixaEtaria = document.createElement('div');
           infoFaixaEtaria.className = 'group-info';
-          infoFaixaEtaria.innerHTML = `<i class="fas fa-users group-info-icon"></i><span>Faixa etária: ${grupo.faixaEtaria}</span>`;
+          infoFaixaEtaria.innerHTML = `<i class="fas fa-users group-info-icon"></i><span>Faixa etária — ${grupo.faixaEtaria}</span>`;
           infoContainer.appendChild(infoFaixaEtaria);
           
           // Botão de contato
